@@ -52,10 +52,19 @@ body{
 .preview{
     position: relative;
     height: calc(90vh - 30px);
-    background: #fff;
+    background: #6272a4;
     border-top: 10px ridge #333;
 }
 .preview iframe{
     width: 100%;
     height: 100%;
 }
+
+::-webkit-scrollbar{
+    width: 5px;
+    height: 5px;    
+} 
+::-webkit-scrollbar-thumb{
+  background: #555;
+  border-radius: 20px;   
+} 
