@@ -1,43 +1,40 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/theme/panda-syntax.min.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/codemirror.min.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/addon/hint/show-hint.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/theme/panda-syntax.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/addon/hint/show-hint.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Code Editor</title>
+    <title> Code Editor </title>
 </head>
-<body>
-    
 
- <div class="container">
-    <div class="header">
-        <div class="title">
-            <div class="min-title">
-                Live Code Editor
-            </div>
-            <div class="sub-title">
-                <span>#</span>AEK   
+<body>
+
+    <div class="container">
+        <div class="header">
+            <div class="title">
+                <div class="main-title">
+                    Live Code Editor
+                </div>
+                <div class="sub-title">
+                    <span># </span>AEK
+                </div>
             </div>
         </div>
+
+        <div class="code-box">
+            <div class="editor" id="html"></div>
+            <div class="editor" id="css"></div>
+            <div class="editor" id="js"></div>
+        </div>
+        <div class="preview">
+            <iframe id="live-preview"></iframe>
+        </div>
+
     </div>
-    <div class="code-box">
-        <div class="editor" id="html">1</div>
-        <div class="editor" id="css">2</div>
-        <div class="editor" id="js">3</div>
-    </div>
-    <div class="preview">
-        <iframe id="live-preview"></iframe>
-    </div>
- </div>
-
-
-
-
-
-
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/codemirror.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/mode/htmlmixed/htmlmixed.min.js"></script>
@@ -49,4 +46,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/mode/xml/xml.min.js"></script>
     <script src="index.js"></script>
 </body>
+
 </html>

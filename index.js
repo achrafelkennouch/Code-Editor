@@ -69,3 +69,28 @@ function initializeCodeEditors(){
     };
     return codeEditors;
 }
+// Function to set up the live preview studio with CodeMirror editors and event listeners
+function setupLivePreviewStudio() {
+    const codeEditors = initializeCodeEditors();
+
+    // Event listener for changes in HTML editor
+    CodeMirror.on(codeEditors.html, 'change', () => {
+        updateLiveHTMLPreview(codeEditors);
+    });
+
+    // Event listener for changes in CSS editor
+    CodeMirror.on(codeEditors.css, 'change', () => {
+        updateLiveCSSPreview(codeEditors);
+    });
+
+    // Event listener for changes in HTML editor
+    CodeMirror.on(codeEditors.js, 'change', () => {
+        updateLiveJSPreview(codeEditors);
+    });
+}
+
+// Event listener to set up the live preview studio after the dom is fully loaded
+document.addEventListener('DOMContentLoaded', () => {
+    initializeLivePreview();
+    setupLivePreviewStudio();
+});

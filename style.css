@@ -68,3 +68,6 @@ body{
   background: #555;
   border-radius: 20px;   
 } 
+::-webkit-scrollbar-track{
+    background: transparent;
+}
